@@ -13,7 +13,7 @@ curMonth = date.getMonth() + 1;
 curDay = date.getDate();
 
 var Difference_In_Time = date.getTime() - past.getTime();
-var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+var Difference_In_Days = Math.floor(Difference_In_Time / (1000 * 3600 * 24));
 
 monthsb = curMonth - 7;
 
