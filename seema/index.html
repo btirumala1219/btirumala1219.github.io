@@ -5,6 +5,29 @@
 		<meta charset="utf-8" />
 	</head>
 	<body>
-        i love you, seema
+<div id="date"></p>
+<script>
+date = new Date();
+past = new Date("07/19/2022");
+curMonth = date.getMonth() + 1;
+curDay = date.getDate();
+
+var Difference_In_Time = date.getTime() - past.getTime();
+var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+
+monthsb = curMonth - 7;
+
+if(curDay == 19){
+document.getElementById("current_date").innerHTML = "HAPPY " + monthsb + " month Anniversary! It has been " + Difference_In_Days + " days ince seems and barath became official :)" ;
+} else {
+document.getElementById("current_date").innerHTML = "It has been " + Difference_In_Days + " days ince seems and barath became official :)" ;
+}
+
+
+document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+</script>
+        
 	</body>
 </html>
+
+
