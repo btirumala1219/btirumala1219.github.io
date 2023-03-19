@@ -15,7 +15,7 @@ curDay = date.getDate();
 var Difference_In_Time = date.getTime() - past.getTime();
 var Difference_In_Days = Math.floor(Difference_In_Time / (1000 * 3600 * 24));
 
-monthsb = curMonth - 7;
+monthsb = curMonth + 5;
 
 if(curDay == 19){
 document.getElementById("date").innerHTML = "HAPPY " + monthsb + " month Anniversary! It has been " + Difference_In_Days + " days since seems and barath became official :)" ;
