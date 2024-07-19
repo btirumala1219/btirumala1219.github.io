@@ -6,7 +6,29 @@
 	</head>
 	<body>
 <div id="date"  style="font-size:40px;" ></p>
-		<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+		    <script src="confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+    </script>
 <script>
 date = new Date();
 past = new Date("07/19/2022");
@@ -23,10 +45,6 @@ document.getElementById("date").innerHTML = "HAPPY 2 YEAR ANNIVERSARY!!! I love 
 } else {
 document.getElementById("date").innerHTML = "It has been " + Difference_In_Days + " days since seems and barath became official :)" ;
 }
-
-	document.addEventListener("click", function(){
-    party.confetti(this);
-});
 
 </script>
 
