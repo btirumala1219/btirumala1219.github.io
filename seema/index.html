@@ -6,6 +6,7 @@
 	</head>
 	<body>
 <div id="date"  style="font-size:40px;" ></p>
+		<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
 <script>
 date = new Date();
 past = new Date("07/19/2022");
@@ -23,8 +24,11 @@ document.getElementById("date").innerHTML = "HAPPY 2 YEAR ANNIVERSARY!!! I love 
 document.getElementById("date").innerHTML = "It has been " + Difference_In_Days + " days since seems and barath became official :)" ;
 }
 
+	document.addEventListener("click", function(){
+    party.confetti(this);
+});
+
 </script>
-	<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
 
 
 <img src="../assets/peems.jpg" alt="Girl">        
